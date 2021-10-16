@@ -6,3 +6,4 @@ window.onscroll = () => {
     parallax.style.backgroundPositionY = scrollTop * 0.7 + 'px';
 }
 
+
