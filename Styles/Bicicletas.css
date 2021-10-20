@@ -54,6 +54,38 @@
 	filter: blur(30px);
 }
 
+.carrito {
+	opacity: 1;
+	height: 35px;
+	width: 35px;
+}
+
+.carrito2 {
+	opacity: 0;
+	height: 35px;
+	width: 35px;
+	animation: reboteCarrito 0.5s alternate infinite ease-in;
+}
+
+@keyframes reboteCarrito {
+	0% {
+		transform: translateY(-25%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.BotonCarrito {
+	margin-left: 200px;
+	border-radius: 20px;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(to right, #b825dd, rgb(12, 58, 128));
+	color: white;
+	font-family: fantasy;
+}
+
 .container-bicicletas-accesorios {
 	width: 90%;
 	max-width: 100 0px;
@@ -61,7 +93,6 @@
 	margin-right: auto;
 	margin-top: 3em;
 	margin-bottom: 3em;
-
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 30px;
