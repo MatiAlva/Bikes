@@ -4,6 +4,60 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* Scroll */
+
+::-webkit-scrollbar {
+	width: 0;
+}
+#scrollPath {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgb(255, 255, 255), 0.05;
+}
+
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animacionScroll 5s linear infinite;
+}
+
+@keyframes animacionScroll {
+	0%,
+	100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressbar:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+
+#progressbar:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(30px);
+}
+
 .flecha {
 	display: flex;
 	margin-top: -100px;
@@ -145,7 +199,7 @@ section#home {
 	align-items: center;
 	color: #ffffff;
 	font-family: fantasy;
-	background: rgb(95, 60, 60);
+	background: linear-gradient(to right, #b825dd, rgb(12, 58, 128));
 	margin: 30px;
 	text-decoration: none;
 	padding: 20px 60px;
