@@ -1,0 +1,15 @@
+[
+    {  
+    "titulo": "BMX",
+    "descripcion": "Bicicletas diseñadas para carreras o freestyle. Ruedas de 20 pulgadas de diametro. Ideal para ir a alta velocidad o hacer acrobacias. Orientadas a deportes extremos." 
+   },
+    {
+    "titulo": "CYCLOCROSS",
+    "descripcion": "Bicicletas perfectas para competir, similares a bicicletas de rutas. Buena opcion para ciclistas que tienen poco espacio. No son bicicletas de velocidad en asfalto." 
+    },
+    {
+    "titulo": "TRIATLON",
+    "descripcion": "Diseñadas para pedalear solos a una velocidad constante, sin cambios de ritmo y sin movimientos bruscos. Ideales para superficies planas sin muchos desniveles." 
+    }
+
+]

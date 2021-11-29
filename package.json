@@ -1,0 +1,27 @@
+{
+  "name": "proyectofrontend",
+  "version": "1.0.0",
+  "description": "Sitio web Dinamico ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiAlva/Bikes.git"
+  },
+  "author": "Alvarez Matias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiAlva/Bikes/issues"
+  },
+  "homepage": "https://github.com/MatiAlva/Bikes#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
