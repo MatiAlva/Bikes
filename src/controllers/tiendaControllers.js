@@ -1,9 +1,10 @@
 const dataBaseConnection = require('../../config/dataBase')
-
-
+const info = require('../../cardIndex.json');
 
 const renderHome = (req,res) =>{
-    res.render('pages/index')
+    res.render('pages/index', {
+        dataProductos: info 
+    })
 }
 
 
@@ -12,7 +13,7 @@ const renderProducts = (req,res) =>{
         if(error){
             console.log(error)
         }else{  
-            res.render('pages/bicicletas', {
+            res.render('/pages/bicicletas', {
                 data
             })
         }

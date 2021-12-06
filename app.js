@@ -2,9 +2,8 @@ const express = require('express')
 const app = express()
 const routes = require('./src/routes/tiendaRoutes')
 const path = require("path");
-const info = require('./cardIndex.json');
-const dataBaseConnection = require('./config/dataBase')
 
+const dataBaseConnection = require('./config/dataBase')
 
 
 dataBaseConnection.connect()
@@ -13,21 +12,24 @@ dataBaseConnection.connect()
 app.use(express.json())
 
 
-app.set('views',path.join(__dirname,'views'));
+app.set('views',path.join(__dirname,'src/views'));
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'public')));
 
 
+app.use("", routes)
 
-app.use('/home', (req, res)=>{
-    res.render('index', {
-     dataProductos: info 
-    });
-})
+
+// app.use('/home', (req, res)=>{
+//     res.render('index', {
+//      dataProductos: info 
+//     });
+// })
+
 
 
 app.use('/bicicleta', (req, res) =>{
-    res.render('./pages/bicicletas')
+    res.render('/pages/bicicletas')
 })
 
 
