@@ -101,12 +101,15 @@ const capturado = async (req,res) => {
       password: SECRET_API,
     },
    })
-    res.send('capturado')
+    res.send('Pago Exitoso')
 }
 
 const cancelar = (req,res) => {
     res.send('/')
 }
+
+
+
 
 module.exports = {
     renderHome,
@@ -115,5 +118,6 @@ module.exports = {
     renderNosotros,
     crearOrden,
     capturado,
-    cancelar
+    cancelar,
+
 }

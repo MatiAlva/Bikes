@@ -55,7 +55,7 @@
 }
 
 body {
-	background-image: url(https://images.pexels.com/photos/270214/pexels-photo-270214.jpeg);
+	background-image: url(../img/FondoContacto.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
@@ -123,6 +123,7 @@ textarea {
 	cursor: pointer;
 	padding: 15px;
 	margin-top: 10px;
+	width: 100%;
 }
 footer {
 	background: rgb(16, 20, 20);
