@@ -1,8 +1,11 @@
-export const API_CLIENT = 'AUC0tRBR5zQEx7IqnW4Bycra2WYnpyATVzuXHEMWPo2BR609CXQ00ZZhm_celSVQcMXPaw3cOyyLembf'
+import { config } from "dotenv"
+config()
 
-export const SECRET_API =  'EOWd9Y7hvajNTAxO9KRXNAOusfgup6fiMtZ27n-JsLaDAFCN1KglfMrqfyFA8tRbkmZfu0V8paUAD7Yb'
+export const API_CLIENT = process.env.API_CLIENT
 
-export const PAYPAL_API = 'https://api-m.sandbox.paypal.com'
+export const SECRET_API = process.env.SECRET_API
+
+export const PAYPAL_API = process.env.PAYPAL_API
 
 
 export const Puerto = 3000

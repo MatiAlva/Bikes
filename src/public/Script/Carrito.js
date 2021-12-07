@@ -1,9 +1,10 @@
-let BotonCarrito = document.querySelectorAll("#Boton");
-let carritoVacio =  document.getElementById("carrito");
-let carritoLleno =  document.getElementById("carrito2");
+let checkout = document.querySelectorAll("#Boton");
 
-BotonCarrito.forEach((boton)=>{ boton.addEventListener("click",()=>{
-        carritoVacio.style.opacity= "0";
-        carritoLleno.style.opacity= "1";  
-    });
-});
+checkout.addEventListener('click' , async function () {
+    const response = await fetch('Capturado' ,{
+        method: 'POST',
+    })
+    const data = await response.json()
+
+    window.location.href = data.links[1].href
+})

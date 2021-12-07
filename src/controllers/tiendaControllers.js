@@ -91,12 +91,21 @@ const crearOrden = async (req, res) => {
   
 
 
-const capturado = (req,res) => {
+const capturado = async (req,res) => {
+
+    const {token} = req.query
+
+   const response = await axios.post(`${PAYPAL_API}/v2/checkout/orders/${token}/capture`, {}, {
+    auth: {
+      username: API_CLIENT,
+      password: SECRET_API,
+    },
+   })
     res.send('capturado')
 }
 
 const cancelar = (req,res) => {
-    res.send('cancelado')
+    res.send('/')
 }
 
 module.exports = {
